@@ -1,6 +1,7 @@
 export default {
   products: [
     {
+      _id: "1",
       name: "Slim Shirt",
       category: "Shirts",
       image: "/images/1.webp",
@@ -10,6 +11,7 @@ export default {
       numReviews: 10,
     },
     {
+      _id: "2",
       name: "Slim Shirt",
       category: "Shirts",
       image: "/images/1.webp",
@@ -19,6 +21,7 @@ export default {
       numReviews: 10,
     },
     {
+      _id: "32",
       name: "Slim Shirt",
       category: "Paints",
       image: "/images/1.webp",
@@ -28,6 +31,7 @@ export default {
       numReviews: 10,
     },
     {
+      _id: "3",
       name: "Slim Shirt",
       category: "Paints",
       image: "/images/1.webp",
@@ -37,6 +41,7 @@ export default {
       numReviews: 10,
     },
     {
+      _id: "4",
       name: "Slim Shirt",
       category: "Paints",
       image: "/images/1.webp",
@@ -46,6 +51,7 @@ export default {
       numReviews: 10,
     },
     {
+      _id: "5",
       name: "Slim Shirt",
       category: "Paints",
       image: "/images/1.webp",
