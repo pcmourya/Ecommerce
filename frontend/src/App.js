@@ -1,5 +1,5 @@
 import React from "react"
-import logo from "./logo.svg"
+import data from "./data"
 import "./App.css"
 
 function App() {
@@ -39,111 +39,21 @@ function App() {
       <main className="main">
         <div className="content">
           <ul className="products">
-            <li>
-              <div className="product">
-                <img
-                  className="product-image"
-                  src="/images/9-Colors-High-Quality-Dress-Shirts-2020-New-Business-Casual-Men-Long-Sleeves-Shirt-Fashion-Men.webp"
-                  alt=""
-                />
-                <div className="product-name">
-                  <a href="product.html">Slim Shirt</a>
-                </div>
-                <div className="product-brand">Nike</div>
-                <div className="product-price">$20</div>
-                <div className="product-rating">4.5 Stars (10 Reviews)</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img
-                  className="product-image"
-                  src="/images/9-Colors-High-Quality-Dress-Shirts-2020-New-Business-Casual-Men-Long-Sleeves-Shirt-Fashion-Men.webp"
-                  alt=""
-                />
-                <div className="product-name">
-                  <a href="product.html">Slim Shirt</a>
-                </div>
-                <div className="product-brand">Nike</div>
-                <div className="product-price">$20</div>
-                <div className="product-rating">4.5 Stars (10 Reviews)</div>
-              </div>
+            {data.products.map((product) => (
               <li>
                 <div className="product">
-                  <img
-                    className="product-image"
-                    src="/images/9-Colors-High-Quality-Dress-Shirts-2020-New-Business-Casual-Men-Long-Sleeves-Shirt-Fashion-Men.webp"
-                    alt=""
-                  />
+                  <img className="product-image" src={product.image} alt="" />
                   <div className="product-name">
-                    <a href="product.html">Slim Shirt</a>
+                    <a href="product.html">{product.name}</a>
                   </div>
-                  <div className="product-brand">Nike</div>
-                  <div className="product-price">$20</div>
-                  <div className="product-rating">4.5 Stars (10 Reviews)</div>
+                  <div className="product-brand">{product.brand}</div>
+                  <div className="product-price">${product.price}</div>
+                  <div className="product-rating">
+                    {product.stars} Stars ({product.numReviews} Reviews)
+                  </div>
                 </div>
-              </li>{" "}
-            </li>
-            <li>
-              <div className="product">
-                <img
-                  className="product-image"
-                  src="/images/9-Colors-High-Quality-Dress-Shirts-2020-New-Business-Casual-Men-Long-Sleeves-Shirt-Fashion-Men.webp"
-                  alt=""
-                />
-                <div className="product-name">
-                  <a href="product.html">Slim Shirt</a>
-                </div>
-                <div className="product-brand">Nike</div>
-                <div className="product-price">$20</div>
-                <div className="product-rating">4.5 Stars (10 Reviews)</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img
-                  className="product-image"
-                  src="/images/9-Colors-High-Quality-Dress-Shirts-2020-New-Business-Casual-Men-Long-Sleeves-Shirt-Fashion-Men.webp"
-                  alt=""
-                />
-                <div className="product-name">
-                  <a href="product.html">Slim Shirt</a>
-                </div>
-                <div className="product-brand">Nike</div>
-                <div className="product-price">$20</div>
-                <div className="product-rating">4.5 Stars (10 Reviews)</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img
-                  className="product-image"
-                  src="/images/9-Colors-High-Quality-Dress-Shirts-2020-New-Business-Casual-Men-Long-Sleeves-Shirt-Fashion-Men.webp"
-                  alt=""
-                />
-                <div className="product-name">
-                  <a href="product.html">Slim Shirt</a>
-                </div>
-                <div className="product-brand">Nike</div>
-                <div className="product-price">$20</div>
-                <div className="product-rating">4.5 Stars (10 Reviews)</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img
-                  className="product-image"
-                  src="/images/9-Colors-High-Quality-Dress-Shirts-2020-New-Business-Casual-Men-Long-Sleeves-Shirt-Fashion-Men.webp"
-                  alt=""
-                />
-                <div className="product-name">
-                  <a href="product.html">Slim Shirt</a>
-                </div>
-                <div className="product-brand">Nike</div>
-                <div className="product-price">$20</div>
-                <div className="product-rating">4.5 Stars (10 Reviews)</div>
-              </div>
-            </li>
+              </li>
+            ))}
           </ul>
         </div>
       </main>
