@@ -12,7 +12,7 @@ function HomeScreen(props) {
     return () => {
       //
     }
-  }, [])
+  })
 
   return loading ? (
     <div>Loading...</div>
