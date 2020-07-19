@@ -1,6 +1,6 @@
 import React from "react"
-import HomeScreen from "./Screens/HomeScreen"
-import ProductScreen from "./Screens/ProductScreen"
+import HomeScreen from "./screens/HomeScreen"
+import ProductScreen from "./screens/ProductScreen"
 import { BrowserRouter, Route, Link } from "react-router-dom"
 import "./App.css"
 
